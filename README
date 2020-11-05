@@ -9,9 +9,10 @@ To install module for testing run:
 sudo insmod gener.ko gpio=17,24,27
 
 To test run:
-sudo echo 1000000:50000 > /dev/gen17
-sudo echo 1100000:50000 > /dev/gen24
-sudo echo 1300000:50000 > /dev/gen27
+sudo bash
+echo 1000000:50000 > /dev/gen17
+echo 1100000:50000 > /dev/gen24
+echo 1300000:50000 > /dev/gen27
 
 Or just run script:
 sudo ./gener.sh
