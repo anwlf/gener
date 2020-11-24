@@ -30,7 +30,7 @@
 MODULE_LICENSE("GPL");                  ///< The license type -- this affects available functionality
 MODULE_AUTHOR("Volkovs, Andrejs");      ///< The author -- visible when you use modinfo
 MODULE_DESCRIPTION("A Linux char driver for frequency generation on GPIO output");  ///< The description -- see modinfo
-MODULE_VERSION("0.1");                  ///< A version number to inform users
+MODULE_VERSION("1.0.0.1");              ///< A version number to inform users
 
 static int    majorNumber;              ///< Stores the device number -- determined automatically
 static char   message[2256] = {""};     ///< Memory for the string that is passed from userspace
@@ -342,9 +342,3 @@ static int dev_release(struct inode *inodep, struct file *filep){
 
 module_init(dev_init);
 module_exit(dev_exit);
-
-/*
-MODULE_LICENSE("Dual BSD/GPL");
-MODULE_AUTHOR("A.V.");
-MODULE_DESCRIPTION("Generator Driver");
-*/
